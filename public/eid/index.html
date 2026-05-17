@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>بطاقة عيد أضحى مبارك — مجموعة هاكا</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="head">
+      <h1>بطاقة تهنئة عيد الأضحى</h1>
+      <p>اكتب اسمك ثم حمّل البطاقة بصيغة PNG</p>
+    </header>
+
+    <section class="card-stage">
+      <canvas id="card" aria-label="معاينة البطاقة"></canvas>
+    </section>
+
+    <section class="controls">
+      <label for="name" class="lbl">اسم الموظف</label>
+      <input
+        id="name"
+        type="text"
+        placeholder="اكتب اسمك هنا"
+        autocomplete="off"
+        maxlength="60"
+        dir="auto"
+      />
+      <label class="bold-toggle">
+        <input id="bold" type="checkbox" />
+        <span>خط عريض</span>
+      </label>
+      <button id="download" type="button">تحميل البطاقة PNG</button>
+    </section>
+
+    <footer class="foot">© مجموعة هاكا — ١٤٤٧هـ</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
